@@ -67,9 +67,9 @@
     <category term="技术" scheme="https://www.xmper.cc/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-    <category term="wsl" scheme="https://www.xmper.cc/tags/wsl/"/>
-    
     <category term="Docker" scheme="https://www.xmper.cc/tags/Docker/"/>
+    
+    <category term="wsl" scheme="https://www.xmper.cc/tags/wsl/"/>
     
     <category term="测试" scheme="https://www.xmper.cc/tags/%E6%B5%8B%E8%AF%95/"/>
     
