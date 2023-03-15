@@ -1004,7 +1004,7 @@ button {
 }
 @font-face {
   font-family: '103-上首星际体';
-  src: url("https://cdn.jsdelivr.net/gh/EarlCharlie/earlcharlie.github.io@main/media/fonts/No.103-ShangShouXingJiTi-2.ttf");
+  src: url("/media/fonts/No.103-ShangShouXingJiTi-2.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
