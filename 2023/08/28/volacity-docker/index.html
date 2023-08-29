@@ -51,18 +51,17 @@
   <!-- 页面元数据 -->
   <title>单主机利用Docker搭建Velocity代理MC群组服务器 - 寻梦派</title>
   <meta name="keywords" content="技术,记录,Minecraft,null">
-  <meta desc name="description" content="
-Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Do... - Xmper - 寻梦派">
+  <meta desc name="description" content="Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Doc... - Xmper - 寻梦派">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="单主机利用Docker搭建Velocity代理MC群组服务器">
 <meta property="og:url" content="https://www.xmper.cc/2023/08/28/volacity-docker/index.html">
 <meta property="og:site_name" content="寻梦派">
-<meta property="og:description" content="Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Docker可以实现在单台主机中部署Velocity代理MC群组服务器，节省了多台主机带来">
+<meta property="og:description" content="Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Docker可以实现在单台主机中部署Velocity代理MC群组服务器，节省了多台主机带来的">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.xmper.cc/pic/favicons/android-chrome-192x192.png">
 <meta property="article:published_time" content="2023-08-28T08:04:02.000Z">
-<meta property="article:modified_time" content="2023-08-29T03:36:31.144Z">
+<meta property="article:modified_time" content="2023-08-29T04:17:54.040Z">
 <meta property="article:author" content="Xmper">
 <meta property="article:tag" content="技术">
 <meta property="article:tag" content="记录">
@@ -1992,7 +1991,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.7a2c825e.js","parallax":"/js/plugins/parallax.8bf0ab10.js","rightMenu":"/js/plugins/rightMenu.d9437285.js","rightMenus":"/js/plugins/rightMenus.80d861b1.js","sites":"/js/plugins/tags/sites.76bf19b8.js","friends":"/js/plugins/tags/friends.f372da57.js","contributors":"/js/plugins/tags/contributors.aec80453.js","search":"/js/search/hexo.85946653.js"},"css":{"style":"/css/style.79e7918e.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1693282176735),
+    lastupdate: new Date(1693282682673),
     sidebar: {
       for_page: ["blogger","category","tagcloud","donate","music","webinfo"],
       for_post: ["toc","music"],
@@ -2829,9 +2828,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
   
-    <span hidden>
-      <meta itemprop="image" content="/pic/favicons/android-chrome-192x192.png">
-    </span>
+    <div class='headimg-div'>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='pic/volacity-docker/velocity-blue.png'/>
+      </a>
+    </div>
   
   <div class="article-meta" id="top">
     
@@ -2927,8 +2928,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p><img src="/pic/volacity-docker/velocity-blue.png" class="lazyload" data-srcset="/pic/volacity-docker/velocity-blue.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="velocity-blue"></p>
-<p>Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Docker可以实现在单台主机中部署Velocity代理MC群组服务器，节省了多台主机带来的额外开支，但是单主机搭建会带来的多容器性能互相影响等问题，所以该方案仅适用于测试。</p>
+    <p>Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Docker可以实现在单台主机中部署Velocity代理MC群组服务器，节省了多台主机带来的额外开支，但是单主机搭建会带来的多容器性能互相影响等问题，所以该方案仅适用于测试。</p>
 <span id="more"></span>
 
 <h2 id="部署环境"><a href="#部署环境" class="headerlink" title="部署环境"></a>部署环境</h2><p>系统：Debian 12</p>
@@ -3018,7 +3018,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-29T11:36:31+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2023-08-29T12:17:54+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2023年8月29日</p>
@@ -3044,8 +3044,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.xmper.cc/2023/08/28/volacity-docker/&title=单主机利用Docker搭建Velocity代理MC群组服务器 - 寻梦派&summary=
-Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Docker可以实现在单台主机中部署Velocity代理MC群组服务器，节省了多台主机带来的额外开支，但是单主机搭建会带来的多容器性能互相影响等问题，所以该方案仅适用于测试。"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://www.xmper.cc/2023/08/28/volacity-docker/&title=单主机利用Docker搭建Velocity代理MC群组服务器 - 寻梦派&summary=Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Docker可以实现在单台主机中部署Velocity代理MC群组服务器，节省了多台主机带来的额外开支，但是单主机搭建会带来的多容器性能互相影响等问题，所以该方案仅适用于测试。"
           
           >
           
@@ -3057,8 +3056,7 @@ Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有�
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.xmper.cc/2023/08/28/volacity-docker/&title=单主机利用Docker搭建Velocity代理MC群组服务器 - 寻梦派&summary=
-Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Docker可以实现在单台主机中部署Velocity代理MC群组服务器，节省了多台主机带来的额外开支，但是单主机搭建会带来的多容器性能互相影响等问题，所以该方案仅适用于测试。"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://www.xmper.cc/2023/08/28/volacity-docker/&title=单主机利用Docker搭建Velocity代理MC群组服务器 - 寻梦派&summary=Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Docker可以实现在单台主机中部署Velocity代理MC群组服务器，节省了多台主机带来的额外开支，但是单主机搭建会带来的多容器性能互相影响等问题，所以该方案仅适用于测试。"
           
           >
           
@@ -3070,8 +3068,7 @@ Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有�
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.xmper.cc/2023/08/28/volacity-docker/&title=单主机利用Docker搭建Velocity代理MC群组服务器 - 寻梦派&summary=
-Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Docker可以实现在单台主机中部署Velocity代理MC群组服务器，节省了多台主机带来的额外开支，但是单主机搭建会带来的多容器性能互相影响等问题，所以该方案仅适用于测试。"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://www.xmper.cc/2023/08/28/volacity-docker/&title=单主机利用Docker搭建Velocity代理MC群组服务器 - 寻梦派&summary=Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Docker可以实现在单台主机中部署Velocity代理MC群组服务器，节省了多台主机带来的额外开支，但是单主机搭建会带来的多容器性能互相影响等问题，所以该方案仅适用于测试。"
           
           >
           
@@ -4593,7 +4590,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"寻梦派","url":"https://www.xmper.cc/","logo":{"@type":"ImageObject","url":"/pic/favicons/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xmper","image":{"@type":"ImageObject","url":"/pic/favicons/android-chrome-192x192.png"},"url":"https://www.xmper.cc/","sameAs":["https://github.com/EarlCharlie"],"description":"兴趣使然的个人小站"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.xmper.cc/","name":"寻梦派"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.xmper.cc/categories/娱乐/","name":"娱乐"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.xmper.cc/2023/08/28/volacity-docker/","name":"单主机利用Docker搭建Velocity代理MC群组服务器"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"寻梦派","url":"https://www.xmper.cc/","keywords":null,"description":"兴趣使然的个人小站","author":{"@type":"Person","name":"Xmper","image":{"@type":"ImageObject","url":"/pic/favicons/android-chrome-192x192.png"},"url":"https://www.xmper.cc/","description":"兴趣使然的个人小站"},"publisher":{"@type":"Organization","name":"寻梦派","url":"https://www.xmper.cc/","logo":{"@type":"ImageObject","url":"/pic/favicons/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://www.xmper.cc?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"单主机利用Docker搭建Velocity代理MC群组服务器","description":"\nVelocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Docker可以实现在单台主机中部署Velocity代理MC群组服务器，节省了多台主机带来的额外开支，但是单主机搭建会带来的多容器性能互相影响等问题，所以该方案仅适用于测试。","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.xmper.cc/2023/08/28/volacity-docker/"},"author":{"@type":"Person","name":"Xmper","image":{"@type":"ImageObject","url":"/pic/favicons/android-chrome-192x192.png"},"url":"https://www.xmper.cc/"},"publisher":{"@type":"Organization","name":"寻梦派","logo":{"@type":"ImageObject","url":"/pic/favicons/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.xmper.cc/2023/08/28/volacity-docker/","wordCount":242,"datePublished":"2023-08-28T08:04:02.000Z","dateModified":"2023-08-29T03:36:31.144Z","articleSection":"娱乐","keywords":"技术,记录,Minecraft","image":{"@type":"ImageObject","url":"/pic/favicons/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"寻梦派","url":"https://www.xmper.cc/","logo":{"@type":"ImageObject","url":"/pic/favicons/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Xmper","image":{"@type":"ImageObject","url":"/pic/favicons/android-chrome-192x192.png"},"url":"https://www.xmper.cc/","sameAs":["https://github.com/EarlCharlie"],"description":"兴趣使然的个人小站"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.xmper.cc/","name":"寻梦派"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.xmper.cc/categories/娱乐/","name":"娱乐"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.xmper.cc/2023/08/28/volacity-docker/","name":"单主机利用Docker搭建Velocity代理MC群组服务器"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"寻梦派","url":"https://www.xmper.cc/","keywords":null,"description":"兴趣使然的个人小站","author":{"@type":"Person","name":"Xmper","image":{"@type":"ImageObject","url":"/pic/favicons/android-chrome-192x192.png"},"url":"https://www.xmper.cc/","description":"兴趣使然的个人小站"},"publisher":{"@type":"Organization","name":"寻梦派","url":"https://www.xmper.cc/","logo":{"@type":"ImageObject","url":"/pic/favicons/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://www.xmper.cc?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"单主机利用Docker搭建Velocity代理MC群组服务器","description":"Velocity 是一款全新的服务器代理，与 BungeeCord 相比，它拥有更高的性能与更好的安全性，它不仅能为高版本服务端提供更高效，更安全的传输协议，也能为低版本服务端提供  BungeeCord 的原始传输协议。Velocity 快得惊人：登录、服务器切换等，充分利用服务器的硬件进行优化。文章利用Docker可以实现在单台主机中部署Velocity代理MC群组服务器，节省了多台主机带来的额外开支，但是单主机搭建会带来的多容器性能互相影响等问题，所以该方案仅适用于测试。","inLanguage":["zh-CN","en","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.xmper.cc/2023/08/28/volacity-docker/"},"author":{"@type":"Person","name":"Xmper","image":{"@type":"ImageObject","url":"/pic/favicons/android-chrome-192x192.png"},"url":"https://www.xmper.cc/"},"publisher":{"@type":"Organization","name":"寻梦派","logo":{"@type":"ImageObject","url":"/pic/favicons/android-chrome-192x192.png","width":192,"height":192}},"url":"https://www.xmper.cc/2023/08/28/volacity-docker/","wordCount":241,"datePublished":"2023-08-28T08:04:02.000Z","dateModified":"2023-08-29T04:17:54.040Z","articleSection":"娱乐","keywords":"技术,记录,Minecraft","image":{"@type":"ImageObject","url":"pic/volacity-docker/velocity-blue.png","width":1024,"height":768}}]</script>
 
 
 
